@@ -1,0 +1,138 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_large"
+        android:background="@android:color/white"
+        android:elevation="@dimen/card_view_elevation"
+        android:padding="@dimen/padding"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/card_view_corner_radius"
+        app:cardElevation="@dimen/card_view_elevation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_large">
+
+            <ImageView
+                android:id="@+id/avatar_iv"
+                android:layout_width="@dimen/item_feed_profile_size"
+                android:layout_height="@dimen/item_feed_profile_size"
+                android:src="@drawable/ic_placeholder"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/repo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingEnd="@dimen/margin"
+                android:paddingRight="@dimen/margin"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/font_medium"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/avatar_iv"
+                app:layout_constraintTop_toTopOf="@id/avatar_iv"
+                tools:text="Anita murthy has got to sdsdk" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginEnd="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:fontFamily="monospace"
+                android:paddingTop="@dimen/margin_xsmall"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/font_small"
+                app:fontFamily="cursive"
+                app:layout_constraintLeft_toRightOf="@id/avatar_iv"
+                app:layout_constraintTop_toBottomOf="@id/repo_name"
+                tools:text="3 min" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:ellipsize="end"
+                android:fontFamily="cursive"
+                android:lineSpacingExtra="2dp"
+                android:maxLines="2"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/font_xmedium"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/avatar_iv" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_img_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_circle"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:paddingStart="@dimen/margin_small"
+                android:paddingLeft="@dimen/margin_small"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/item_desc" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_likes"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:fontFamily="cursive"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/margin_small_medium"
+                android:paddingLeft="@dimen/margin_small_medium"
+                android:paddingEnd="@dimen/margin_xxlarge"
+                android:paddingRight="@dimen/margin_xxlarge"
+                android:textColor="@color/item_color_like"
+                android:textSize="@dimen/font_xmedium"
+                app:fontFamily="casual"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/item_img_language"
+                app:layout_constraintTop_toBottomOf="@+id/item_desc" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_marginBottom="@dimen/margin_xsmall"
+                android:elevation="@dimen/card_image_view_elevation"
+                android:shadowColor="@color/item_color_shadow"
+                android:shadowRadius="10"
+                android:src="@drawable/ic_reply_24dp"
+                app:elevation="@dimen/card_image_view_elevation"
+                app:fabSize="mini"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/item_desc" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>
