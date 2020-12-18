@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">TopGithubRepo</string>
+    <string name="app_name">Top Github Repositories</string>
+    <string name="text_forks">Forks</string>
+    <string name="text_watchers">Watchers</string>
+    <string name="text_stars">Stars</string>
+
+
+    <string name="transition_image">image</string>
+    <string name="transition_title">title</string>
+    <string name="transition_background">background</string>
+    <string name="transition_language">language</string>
 </resources>

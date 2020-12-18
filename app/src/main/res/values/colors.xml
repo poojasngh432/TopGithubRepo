@@ -17,7 +17,26 @@
     <color name="bg_ripple">#66aeaeae</color>
 
     <color name="color_blue">#54c5f8</color>
+    <color name="blue_dark5">#0093dd</color>
     <color name="color_orange">#f88909</color>
     <color name="color_yellow">#f0db4f</color>
+
+    <!-- grays -->
+    <color name="gray_light1">#f2f2f2</color>
+    <color name="gray_light2">#F5F5F5</color>
+    <color name="gray_light3">#EEEEEE</color>
+    <color name="gray_light4">#E0E0E0</color>
+    <color name="gray_light5">#E5E4E2</color>
+    <color name="gray_light6">#CCCCCC</color>
+    <color name="gray_light7">#c3c3c3</color>
+    <color name="gray_light8">#d9d9d9</color>
+    <color name="gray_dark1">#BDBDBD</color>
+    <color name="gray_dark2">#9E9E9E</color>
+    <color name="gray_dark3">#C0C0C0</color>
+    <color name="gray_dark4">#a6a6a6</color>
+    <color name="gray_dark5">#808080</color>
+    <color name="gray_dark6">#4d4d4d</color>
+
+    <color name="green_turquoise2">#00aab1</color>
 
 </resources>
