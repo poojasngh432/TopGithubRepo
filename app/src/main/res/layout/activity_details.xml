@@ -2,9 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-
     <data class="GithubDetailActivityBinding" />
-
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -70,7 +68,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-
                 <androidx.cardview.widget.CardView
                     android:id="@+id/card_view"
                     android:layout_width="match_parent"
@@ -119,7 +116,7 @@
                             android:maxLines="1"
                             android:paddingEnd="@dimen/margin"
                             android:paddingRight="@dimen/margin"
-                            tools:text="Anita murthy has got to sdsdk"
+                            tools:text="Repo name here"
                             android:textColor="@color/colorAccent"
                             android:textSize="@dimen/font_medium"
                             android:textStyle="bold"

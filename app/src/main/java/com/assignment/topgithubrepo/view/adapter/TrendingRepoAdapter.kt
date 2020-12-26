@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.assignment.topgithubrepo.R
 import com.assignment.topgithubrepo.data.local.GithubEntity
 import com.assignment.topgithubrepo.data.remote.model.Items
-import com.assignment.topgithubrepo.view.activity.DetailsActivity
+import com.assignment.topgithubrepo.view.ui.repodetail.DetailsActivity
 import com.squareup.picasso.Picasso
 import androidx.core.util.Pair
 

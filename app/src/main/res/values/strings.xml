@@ -9,4 +9,6 @@
     <string name="transition_title">title</string>
     <string name="transition_background">background</string>
     <string name="transition_language">language</string>
+    <string name="navigation_drawer_open">Navigation open</string>
+    <string name="navigation_drawer_close">Navigation close</string>
 </resources>

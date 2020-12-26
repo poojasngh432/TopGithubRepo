@@ -36,5 +36,11 @@
     <dimen name="font_xxxlarge">40sp</dimen>
 
     <dimen name="card_image_view_elevation">4dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="avatar_size">30dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="sp_16">16sp</dimen>
 
 </resources>

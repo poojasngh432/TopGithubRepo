@@ -1,4 +1,4 @@
-package com.assignment.topgithubrepo.view.activity
+package com.assignment.topgithubrepo.view.ui.repodetail
 
 import android.content.Intent
 import android.net.Uri
@@ -32,6 +32,18 @@ class DetailsActivity : AppCompatActivity() {
         setData()
     }
 
+    private fun initViews() {
+        avatar = findViewById(R.id.item_profile_img)
+        titleTV = findViewById(R.id.item_title)
+        langTV = findViewById(R.id.item_language)
+        imgLangTV = findViewById(R.id.item_img_language)
+        repoLink = findViewById(R.id.repo_link)
+        descTV = findViewById(R.id.desc)
+        starsTV = findViewById(R.id.item_stars)
+        watchersTV = findViewById(R.id.item_watchers)
+        forksTV = findViewById(R.id.item_forks)
+    }
+
     private fun setData() {
         Picasso.get()
             .load(githubEntity.avatar)
@@ -55,20 +67,6 @@ class DetailsActivity : AppCompatActivity() {
             val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(githubEntity.repoLink))
             startActivity(browserIntent)
         }
-
     }
-
-    private fun initViews() {
-        avatar = findViewById(R.id.item_profile_img)
-        titleTV = findViewById(R.id.item_title)
-        langTV = findViewById(R.id.item_language)
-        imgLangTV = findViewById(R.id.item_img_language)
-        repoLink = findViewById(R.id.repo_link)
-        descTV = findViewById(R.id.desc)
-        starsTV = findViewById(R.id.item_stars)
-        watchersTV = findViewById(R.id.item_watchers)
-        forksTV = findViewById(R.id.item_forks)
-    }
-
 
 }
