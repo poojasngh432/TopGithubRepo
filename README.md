@@ -12,8 +12,6 @@ An Android App that shows the most trending github repositories sorted by number
 
 #### App Architecture 
 Based on mvvm architecture and repository pattern.
-
-<img src="https://github.com/anitaa1990/Github-Trending-Repos/blob/master/media/3.png" width="500" style="max-width:500%;">
  
  #### The app includes the following main components:
 
