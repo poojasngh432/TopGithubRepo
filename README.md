@@ -32,19 +32,20 @@ Based on mvvm architecture and repository pattern.
 * <b>RecyclerView</b>
 
 #### App Packages
-* <b>data</b>
+
+1. <b>data</b>
      - <b>local</b>
      - <b>remote</b>
-         1. <b>api</b> : contains the api classes to make the api calls to the server, using Retrofit client.
-	 2. <b>model</b>
-	 3. <b>response</b>
+	    - <b>api</b> : contains the api classes to make the api calls to the server, using Retrofit client.
+	    - <b>model</b>
+	    - <b>response</b>
      - <b>repository</b> : contains the repository classes, responsible for triggering api requests and saving the response in the database.
-* <b>viewmodel</b>
-* <b>view</b>
+2. <b>viewmodel</b>
+3. <b>view</b>
      - <b>adapter</b> : contains adapters for the recycler view.
      - <b>ui</b> : contains the fragments and activities for Repositories List and Repository details page.
      - <b>viewholder</b> 
-* <b>utils</b> : contains values for Constant variables within the app.
+4. <b>utils</b> : contains values for Constant variables within the app.
 
 
 #### App Specs
